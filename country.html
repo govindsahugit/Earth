@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>countries-details</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="country.css" />
+    <script src="country.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/index.html">Where in the world?</a></h1>
+      <p class="mode-btn">
+        <i class="fa-regular fa-moon"></i>
+        <span class="mode-text"> Dark Mode</span>
+      </p>
+    </header>
+    <main>
+      <div class="back-btn" onclick="history.back()">
+        <a href="#"
+          ><i class="fa-solid fa-arrow-left-long"></i>
+          <p>Back</p></a
+        >
+      </div>
+      <div class="country-information">
+        <img class="flag-img" src="" alt="flag" />
+        <div class="informations-container">
+          <div class="information">
+            <div class="left">
+              <h2 class="country-name"></h2>
+              <p><b>Native name: </b><span class="native-name"></span></p>
+              <p><b>Population: </b><span class="population"></span></p>
+              <p><b>Region: </b><span class="region"></span></p>
+              <p><b>Sub Region: </b><span class="sub-region"></span></p>
+              <p><b>Capital: </b><span class="capital"></span></p>
+            </div>
+            <div class="right">
+              <p><b>Top Level Domain: </b><span class="domain"></span></p>
+              <p><b>Currencies: </b><span class="currencies"></span></p>
+              <p><b>Language: </b><span class="language"></span></p>
+            </div>
+          </div>
+          <div class="country-borders">
+            <h4>Border Countries:</h4>
+            <div class="border-container"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
